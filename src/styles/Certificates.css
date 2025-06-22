@@ -1,0 +1,100 @@
+/* Slideshow */
+
+.certificate-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #e0e0e0;
+      height: calc(100vh - 100px);
+}
+
+
+.slideshow {
+    margin: auto;
+    overflow: hidden;
+    width: 800px;
+    background: #ffffff;
+    border-radius: 3%;
+  }
+  
+  .slideshowSlider {
+    white-space: nowrap;
+    transition: 1000ms;
+  }
+  
+  .slide {
+    display: inline-block;
+    height: 500px;
+    width: 100%;
+    border-radius: 40px;
+    padding: 20px 0px;
+    text-align: center;
+  }
+  
+  /* Buttons */
+  
+  .slideshowDots {
+    text-align: center;
+  }
+  
+  .slideshowDot {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  
+    cursor: pointer;
+    margin: 15px 7px 0px;
+  
+    background-color: #c4c4c4;
+  }
+  
+  .slideshowDot.active {
+    background-color: #6a0dad;
+  }
+  
+  .certificate {
+    width: 90%;
+    height: 100%;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .slideshow {
+      width: 90%;
+    }
+    .slide {
+      display: inline-block;
+      height: 400px;
+      width: 100%;
+      border-radius: 40px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .certificate {
+      object-fit: contain;
+    }
+  }
+  
+  @media screen and (min-width: 401px) and (max-width: 720px) {
+    .certificate {
+      object-fit: contain;
+    }
+  }
+  
+  @media screen and (min-width: 721px) and (max-width: 1280px) {
+      
+  }
+  
+  @media screen and (min-width: 1281px) and (max-width: 1440px) {
+      
+  }
+  
+  @media screen and (min-width: 1441px) and (max-width: 1920px) {
+      
+  }
+  
+  @media screen and (min-width: 1921px) {
+      
+  }

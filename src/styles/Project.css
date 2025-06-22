@@ -1,0 +1,405 @@
+
+.contact-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-inner {
+    width: 100%;
+    padding: 24px;
+  }
+  
+  .tagline {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    color: #cbd5e1;
+  }
+  
+  .karma {
+    color: rgb(224, 0, 30);
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 16px;
+  }
+  
+  .info-block {
+    flex: 1 1 45%;
+  }
+  
+  .label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #cbd5e1;
+  }
+  
+  .info-text {
+    color: #cbd5e1;
+    /* margin-top: 4px; */
+    display: block;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
+  
+
+
+
+
+
+
+
+
+ #projects{
+  background-color: #e0e0e0;
+  padding: 2rem;
+  height: calc(100vh - 100px);
+ }
+/* ProjectCard.css */
+.project-card {
+  position: relative;
+}
+
+.project-card-img {
+  height: 13rem; /* equivalent to h-52 */
+  border-radius: 1rem 1rem 0 0; /* equivalent to rounded-t-xl */
+  background-size: cover;
+}
+
+.project-card-overlay {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 24, 24, 0); /* equivalent to bg-[#181818] bg-opacity-0 */
+  transition: all 0.5s;
+}
+
+.project-card:hover .project-card-overlay {
+  display: flex;
+  background-color: rgba(24, 24, 24, 0.8); /* equivalent to group-hover:bg-opacity-80 */
+}
+
+.project-card-link {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 0.5rem;
+  border: 2px solid #adb7be;
+  position: relative;
+  border-radius: 50%;
+}
+
+.project-card-link:hover {
+  border-color: white;
+}
+
+.project-card-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  color: #adb7be;
+}
+
+.project-card-link:hover .project-card-icon {
+  color: white;
+}
+
+.project-card-content {
+  background-color: #181818;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0 0 1rem 1rem; /* equivalent to rounded-b-xl */
+  margin-top: 1rem;
+}
+
+.project-card-title {
+  font-size: 1.25rem; /* equivalent to text-xl */
+  font-weight: 600; /* equivalent to font-semibold */
+  margin-bottom: 0.5rem;
+}
+
+.project-card-description {
+  color: #adb7be;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styling */
+#projects {
+  
+  background-color: #e0e0e0; /* Dark background for contrast */
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Tag Buttons */
+.project-tag {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  color: #fff;
+  margin: 0 0.25rem;
+}
+
+.project-tag:hover {
+  background-color: #fff;
+  color: #1c1c1c;
+}
+
+.project-tag.selected {
+  background-color: #fff;
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+/* Project Cards Grid */
+.grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+  gap: 2rem;
+}
+
+.tags-container{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+
+}
+
+@media (min-width: 768px) { /* md: breakpoint */
+  .tags-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem; /* gap-12 = 3rem (48px) */
+  }
+}
+
+.tags-container1{
+  
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 6px;
+
+}
+
+.btnsShow{
+  border: 2px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  cursor: pointer;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  border-radius: 9999px;
+  padding-left: 1.5rem; 
+   padding-right: 1.5rem;
+  
+}
+
+.card {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.card-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.card-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.card-footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.card-footer a:hover {
+  color: #66c0f4;
+}
+
+/* Animation for Project Cards */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+motion.li {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  /* Adjust grid layout for smaller screens */
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+.tag-btn {
+  color: #adb7be;
+  border: 1px solid #475569; /* Tailwind's slate-600 */
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.tag-btn:hover {
+  border-color: #ffffff;
+}
+
+.tag-btn.selected {
+  color: white;
+  border-color: #ffffff; /* Tailwind's primary-500 (usually blue-500) */
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .tags-container{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+  }
+ 
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+  .tags-container{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+  }
+    
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    
+}
+
+@media screen and (min-width: 1921px) {
+    
+}
+
