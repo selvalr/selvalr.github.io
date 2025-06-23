@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "../styles/Home.css";
+import { Link } from "react-router-dom";
 //import selva from "../assets/selva.png";
 
 //import selva from "../assets/qw.png";
@@ -40,7 +41,10 @@ const Home = () => {
           </div>
         </div>
         <div className="button">
-          <button className="btn">Download CV</button>
+          <Link to="/resume">
+            <button className="btn">Download CV</button>
+          </Link>
+
           {/* <button class="button1">
             <div class="icon">
               <div class="arrow"></div>

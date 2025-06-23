@@ -97,6 +97,7 @@ const Navbar = () => {
         >
           <IoIosChatboxes /> Contact
         </Link>
+        {/* <Link to={"/resume"}>Resume</Link> */}
         <div
           className={`switch ${expandNavbar ? "active" : "inactive"}`}
           id="switch"

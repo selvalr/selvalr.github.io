@@ -70,6 +70,11 @@ body.dark  .about-title {
 
 }
 
+body.dark  #contact-info{
+  color: #cfcfcf;
+
+}
+
 
 body.light .links a.active-link {
   color: #c47820; 
@@ -84,12 +89,12 @@ body.dark #projects{
 
 
 body.dark .certificate-container{
-  background-color: #0e0e0e;
+  background-color: var(--darkbg);
   color: #e0e0e0;
 }
 
 body.dark .contacts {
-  background-color: #0e0e0e;
+  background-color:var(--darkbg);
   color: #e0e0e0;
 }
 
