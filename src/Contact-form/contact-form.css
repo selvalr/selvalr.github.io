@@ -1,0 +1,107 @@
+.form {
+    display: grid;
+    /* gap: 25px; */
+    margin: 3rem;
+  }
+  
+  .field {
+    position: relative;
+    text-align: left;
+  }
+  
+  .input {
+    color: var(--color-fg);
+    font-size: 1.125rem;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-bg-secondary);
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    caret-color: var(--color-yellow);
+    outline: 2px solid transparent;
+    resize: none;
+    transition: .2s;
+    border: 1px solid;
+    border-radius: 20px;
+  
+    /* &Error {
+      outline-color: var(--color-accent);
+    } */
+  
+    /* &:hover,
+    &:focus-visible {
+      outline-color: var(--color-accent);
+    } */
+  }
+  
+  .error {
+    color: var(--color-accent);
+    font-size: .85rem;
+    margin-top: 3px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  
+  .submit {
+    gap: 10px;
+    min-width: 150px;
+    margin-right: auto;
+  
+    /* &:disabled {
+      pointer-events: none;
+      opacity: .7;
+    } */
+  }
+
+
+  .jss38 {
+    color: #212121;
+    border: 4px solid #00406d;
+    transition: border 0.2s ease-in-out;
+    font-family: var(--primaryFont);
+    font-weight: 500;
+    background-color: #eaeaea;
+}
+
+.form-input, .form-message {
+    box-sizing: border-box;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 2rem;
+    padding: 0.7rem;
+    border-radius: 20px;
+    width: 100%;
+}
+.form-input {
+    height: 50px;
+}
+
+.jss40 {
+    color: #003153;
+    display: inline-flex;
+    padding: 0 5px;
+    font-size: 0.9rem;
+    transform: translate(25px,50%);
+    font-family: var(--primaryFont);
+    font-weight: 600;
+    background-color: #c19a0e;
+    border-radius: 1rem;
+}
+
+.jss39 {
+    color: #212121;
+    border: 4px solid #00406d;
+    transition: border 0.2s ease-in-out;
+    font-family: var(--primaryFont);
+    font-weight: 500;
+    background-color: #eaeaea;
+}
+
+.submit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}

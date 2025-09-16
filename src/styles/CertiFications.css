@@ -1,0 +1,282 @@
+.container-custom {
+  width: 100%;
+  max-width: 1280px;   /* container limit (similar to Tailwind's default container) */
+  margin-left: auto;   /* mx-auto */
+  margin-right: auto;
+  padding-top: 5rem;   /* pt-20 (20 * 0.25rem = 5rem = 80px) */
+  padding-bottom: 5rem; /* py-20 */
+  padding-left: 1.5rem; /* px-6 = 1.5rem (24px) */
+  padding-right: 1.5rem;
+}
+
+/* md:px-20 */
+@media (min-width: 768px) {
+  .container-custom {
+    padding-left: 5rem;   /* 20 * 0.25rem = 5rem = 80px */
+    padding-right: 5rem;
+  }
+}
+
+/* lg:px-32 */
+@media (min-width: 1024px) {
+  .container-custom {
+    padding-left: 8rem;   /* 32 * 0.25rem = 8rem = 128px */
+    padding-right: 8rem;
+  }
+}
+
+
+.text-custom {
+  font-size: 1.5rem;   /* text-2xl = 24px */
+  line-height: 2rem;   /* Tailwind sets line-height with font size */
+  font-weight: 700;    /* font-bold */
+  margin-bottom: 0.5rem; /* mb-2 = 8px */
+  text-align: center;  /* text-center */
+}
+
+/* sm:text-4xl */
+@media (min-width: 640px) {
+  .text-custom {
+    font-size: 2.25rem;   /* text-4xl = 36px */
+    line-height: 2.5rem;
+  }
+}
+
+.text-underline-custom {
+  text-decoration-line: underline;   /* underline */
+  text-underline-offset: 4px;        /* underline-offset-4 */
+  text-decoration-thickness: 1px;    /* decoration-1 */
+  font-weight: 300;                  /* font-light */
+  color: #ff2c74;
+}
+
+
+.text-box-custom {
+  text-align: center;        /* text-center */
+  color: #6b7280;            /* text-gray-500 */
+  margin-bottom: 2rem;       /* mb-8 = 32px */
+  max-width: 20rem;          /* max-w-80 = 320px */
+  margin-left: auto;         /* mx-auto */
+  margin-right: auto;
+}
+
+
+.scrollbar-custom {
+  display: flex;                 /* flex */
+  gap: 1.5rem;                   /* gap-6 = 24px */
+  overflow-x: hidden;              /* overflow-x-auto */
+
+  /* scrollbar-thin */
+  scrollbar-width: thin;         /* Firefox */
+  scrollbar-color: #6b7280 #e5e7eb; /* thumb (gray-500) & track (gray-200) */
+}
+
+/* Chrome, Edge, Safari */
+.scrollbar-custom::-webkit-scrollbar {
+  height: 8px;                   /* thin scrollbar */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #6b7280;     /* gray-500 */
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: #e5e7eb;     /* gray-200 */
+}
+
+
+.card-custom {
+  border: 1px solid rgb(255 255 255 / 50%);
+  flex-shrink: 0;             /* flex-shrink-0 */
+  max-width: 300px;          /* max-w-[300px] */
+   /* border (default Tailwind border = 1px solid gray-200) */
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),
+              0 4px 6px -2px rgba(0,0,0,0.05); /* shadow-lg */
+  border-radius: 0.25rem;     /* rounded (4px radius) */
+  padding-left: 1.5rem;       /* px-6 = 24px */
+  padding-right: 1.5rem;
+  padding-top: 2rem;          /* py-8 = 32px */
+  padding-bottom: 2rem;
+  text-align: start;          /* text-start */
+  transition: background-color 0.3s ease;
+}
+
+/* sm: max-width 350px, px-8, py-12 */
+@media (min-width: 640px) {
+  .card-custom {
+    max-width: 350px;
+    padding-left: 2rem;   /* 32px */
+    padding-right: 2rem;
+    padding-top: 3rem;    /* 48px */
+    padding-bottom: 3rem;
+  }
+}
+
+/* md: max-width 400px */
+@media (min-width: 768px) {
+  .card-custom {
+    max-width: 400px;
+  }
+}
+
+/* hover:bg-gray-800 */
+.card-custom:hover {
+  background-color: #1f2937;  /* gray-800 */
+  color: #fff;                /* optional: ensures text is visible */
+}
+
+
+.flex-col-gap {
+  display: flex;          /* flex */
+  flex-direction: column; /* flex-col */
+  gap: 0.5rem;            /* gap-2 = 8px */
+}
+
+
+.text-customw {
+  font-size: 1.25rem;   /* text-xl = 20px */
+  line-height: 1.75rem; /* Tailwind line-height */
+  color: rgb(251 191 36);       /* text-gray-200 */
+  font-weight: 500;     /* font-medium */
+}
+
+
+.img-custom {
+  width: 100%;    /* w-13 → 13 * 0.25rem = 3.25rem (52px) */
+  height:100%;   /* h-13 → same = 52px */
+  margin-right: auto; /* mr-auto */
+  margin-bottom: 1rem; /* mb-4 = 16px */
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.img-custom.loaded {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.flex-row-center {
+  display: flex;              /* flex */
+  flex-direction: row;        /* flex-row */
+  justify-content: center;    /* justify-center */
+  align-items: center;        /* items-center */
+  gap: 1rem;                  /* gap-4 = 16px */
+  margin-top: 0.5rem;         /* mt-2 = 8px */
+}
+
+.flex-row-center p {
+  color: #d1d5db;             /* text-gray-300 */
+}
+
+.link-icon {
+  width: 2rem;                /* w-8 = 32px */
+  height: 2rem;               /* h-8 = 32px */
+  background: transparent;    /* bg-transparent */
+}
+
+.dot-container {
+  display: flex;              /* flex */
+  justify-content: center;    /* justify-center */
+  margin-top: 1rem;           /* mt-4 = 16px */
+}
+
+.dot {
+  height: 0.5rem;             /* h-2 = 8px */
+  width: 0.5rem;              /* w-2 = 8px */
+  margin-left: 0.25rem;       /* mx-1 = 4px */
+  margin-right: 0.25rem;
+  border-radius: 9999px;      /* rounded-full */
+  cursor: pointer;            /* cursor-pointer */
+  background-color: #9ca3af;  /* default bg-gray-400 */
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #1d4ed8;  /* bg-blue-700 */
+}
+
+
+.carousel-wrapper {
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.7); /* slightly darker */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.5rem 0.75rem;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.arrow:hover {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.left-arrow {
+  left: 0.5rem;   /* stick to the left side */
+}
+
+.right-arrow {
+  right: 0.5rem;  /* stick to the right side */
+}
+
+.arrow:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+
+ .card-custom {
+  position: relative;
+
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+
+.card-custom::after {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  border-radius: 8px;
+  pointer-events: none;
+
+  background:
+    
+    linear-gradient(90deg, #facc15 2px, transparent 0) top left,
+    linear-gradient(180deg, #facc15 2px, transparent 0) top left,
+
+    
+    linear-gradient(90deg, transparent calc(100% - 2px), #facc15 0) top right,
+    linear-gradient(180deg, #facc15 2px, transparent 0) top right,
+
+    
+    linear-gradient(90deg, #facc15 2px, transparent 0) bottom left,
+    linear-gradient(180deg, transparent calc(100% - 2px), #facc15 0) bottom left,
+
+    
+    linear-gradient(90deg, transparent calc(100% - 2px), #facc15 0) bottom right,
+    linear-gradient(180deg, transparent calc(100% - 2px), #facc15 0) bottom right;
+
+  background-repeat: no-repeat;
+  background-size: 20px 20px; 
+  filter: drop-shadow(0 0 6px #facc15) drop-shadow(0 0 12px #facc15); 
+  
+}
+
+ 
+
