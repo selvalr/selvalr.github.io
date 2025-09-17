@@ -221,6 +221,7 @@
 @media screen and (max-width: 400px) {
     
 .icons-Social a .text {
+  font-size: 1.5rem;
   bottom: -50px;
 }
 .details-container {
@@ -244,6 +245,7 @@
   }
   .icons-Social a .text {
     bottom: -57px;
+    font-size: 1.5rem;
   }
 }
 

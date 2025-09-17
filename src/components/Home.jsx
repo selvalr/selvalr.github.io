@@ -99,7 +99,7 @@ const Home = () => {
               <FaGithub className="icons" id="githubicons" />
             </a>
             <a
-              href="https://wa.me/1234567890" // replace with your number
+              href="https://wa.me/9585988369"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -115,7 +115,6 @@ const Home = () => {
       </div>
       <div className="profile">
         <img src={selva} alt="profile" id="profile-pic" loading="eager" />
-        {/* <img src={selva} alt="" id="profile-pic" loading="eager" /> */}
       </div>
 
       <canvas

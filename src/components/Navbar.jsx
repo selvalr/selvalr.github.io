@@ -56,7 +56,7 @@ const Navbar = () => {
       attributeFilter: ["class"],
     });
 
-    return () => observer.disconnect(); // cleanup on unmount
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -65,8 +65,6 @@ const Navbar = () => {
       <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
 
       <nav className="navbar" id={expandNavbar ? "open" : "close"}>
-        {/* <Sidebar/> */}
-
         <div className="logo">
           {" "}
           <h1 className="logo-heading">
@@ -126,13 +124,10 @@ const Navbar = () => {
             <IoIosChatboxes />
             Contact
           </Link>
-          {/* <Link to={"/resume"}>Resume</Link> */}
           <div
             className={`switch ${expandNavbar ? "active" : "inactive"}`}
             id="switch"
-          >
-            {/* <Dark /> */}
-          </div>
+          ></div>
         </div>
 
         <div

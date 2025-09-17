@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
@@ -18,10 +18,8 @@ const Bulb = ({ isOn, setIsOn }) => {
   }, [isOn]);
 
   useEffect(() => {
-    //setIsOn(!isOn);
     if (!svgRef.current || !proxyRef.current) return;
 
-    // Audio setup
     const AUDIO = {
       CLICK: new Audio("https://assets.codepen.io/605876/click.mp3"),
     };
@@ -29,7 +27,6 @@ const Bulb = ({ isOn, setIsOn }) => {
     const STATE = { ON: isOn };
     const CORD_DURATION = 0.1;
 
-    // Get elements
     const CORDS = svgRef.current.querySelectorAll(".toggle-scene__cord");
     const HIT = svgRef.current.querySelector(".toggle-scene__hit-spot");
     const DUMMY = svgRef.current.querySelector(".toggle-scene__dummy-cord");
@@ -268,11 +265,19 @@ const Bulb = ({ isOn, setIsOn }) => {
           <g className="line toggle-scene__dummy-cord">
             <line
               markerEnd="url(#a)"
+              x1="50%"
+              x2="50%"
+              y1="240.5405"
+              y2="380.5405"
+            />
+
+            {/*<line
+              markerEnd="url(#a)"
               x1="98.7255"
               x2="98.7255"
               y1="240.5405"
               y2="380.5405"
-            ></line>
+            ></line>*/}
           </g>
           <circle
             className="toggle-scene__hit-spot"
