@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef,useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
@@ -113,10 +113,31 @@ const Project = () => {
   const [tag, setTag] = useState("All Projects");
 
   const [startIndex, setStartIndex] = useState(0); // track visible tags
-  const tagsPerPage = 3;
+  const [tagsPerPage, setTagsPerPage] = useState(1);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
+  useEffect(() => {
+    const updateTagsPerPage = () => {
+      const width = window.innerWidth;
+      if (width < 640) {
+        setTagsPerPage(1); // Mobile: 1 tag
+      } else if (width < 1024) {
+        setTagsPerPage(2); // Tablet: 2 tags
+      } else {
+        setTagsPerPage(3); // Desktop: 3 tags
+      }
+    };
+
+    updateTagsPerPage();
+    window.addEventListener('resize', updateTagsPerPage);
+    return () => window.removeEventListener('resize', updateTagsPerPage);
+  }, []);
+
+   useEffect(() => {
+    setStartIndex(0);
+  }, [tagsPerPage]);
+  
   const handleTagChange = (newTag) => {
     setTag(newTag);
   };
