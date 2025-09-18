@@ -5,6 +5,8 @@ import { motion, useInView } from "framer-motion";
 import foodRecipe from "../assets/projects-img/mern-project/foodRecipe.png";
 import movies from "../assets/projects-img/react-project/movieHunt.png";
 import disney from "../assets/projects-img/react-project/disney-project.png";
+import animePlus from "../assets/projects-img/Javascript-project/PlusAnimation.png";
+
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // icons
 import Pro from "./Pro";
 
@@ -97,6 +99,18 @@ const projectsData = [
   //   previewUrl:
   //     "https://drive.google.com/file/d/1OpNc-y5iGxpcQm_SUkthlCeZW4t91YMD/view?usp=drivesdk",
   // },
+  {
+    id: 9,
+    title: "Animation Plus",
+    description:
+      "Anime Plus website created using HTML, CSS, and JavaScript; showcasing interactive design, responsive layout, smooth animations, and engaging user experience.",
+    image: animePlus,
+    tag: ["All Projects", "JS Projects"],
+    gitUrl:
+      "https://github.com/selvalr/02-JavaScript-Projects/tree/main/94-PlusAnime",
+    previewUrl:
+      "https://drive.google.com/file/d/1OpNc-y5iGxpcQm_SUkthlCeZW4t91YMD/view?usp=drivesdk",
+  },
 ];
 
 const allTags = [
