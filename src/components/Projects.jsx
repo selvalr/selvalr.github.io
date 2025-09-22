@@ -7,6 +7,8 @@ import movies from "../assets/projects-img/react-project/movieHunt.png";
 import disney from "../assets/projects-img/react-project/disney-project.png";
 import animePlus from "../assets/projects-img/Javascript-project/PlusAnimation.png";
 
+import lifeOfPaper from "../assets/projects-img/Javascript-project/preview.jpg";
+
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // icons
 import Pro from "./Pro";
 
@@ -109,19 +111,19 @@ const projectsData = [
     gitUrl:
       "https://github.com/selvalr/02-JavaScript-Projects/tree/main/94-PlusAnime",
     previewUrl:
-      "https://drive.google.com/file/d/1OpNc-y5iGxpcQm_SUkthlCeZW4t91YMD/view?usp=drivesdk",
+      "https://8b0671c3-399f-487f-a6dc-eb731c81dc25-00-1nkcbwbamm6hz.janeway.replit.dev/94-PlusAnime/index.html",
   },
   {
     id: 10,
     title: "Life Of Paper",
     description:
       "An interactive bookstore website showcasing books’ journey from paper to shelves, featuring search, sliders, user login, and responsive design.",
-    image: animePlus,
+    image: lifeOfPaper,
     tag: ["All Projects", "JS Projects"],
     gitUrl:
       "https://github.com/selvalr/02-JavaScript-Projects/tree/main/95-life-on-paper",
     previewUrl:
-      "https://drive.google.com/file/d/1OpNc-y5iGxpcQm_SUkthlCeZW4t91YMD/view?usp=drivesdk",
+      "https://8b0671c3-399f-487f-a6dc-eb731c81dc25-00-1nkcbwbamm6hz.janeway.replit.dev/95-life-on-paper/index.html",
   },
 ];
 
