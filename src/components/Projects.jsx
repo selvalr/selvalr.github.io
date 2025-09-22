@@ -111,6 +111,18 @@ const projectsData = [
     previewUrl:
       "https://drive.google.com/file/d/1OpNc-y5iGxpcQm_SUkthlCeZW4t91YMD/view?usp=drivesdk",
   },
+  {
+    id: 10,
+    title: "Life Of Paper",
+    description:
+      "An interactive bookstore website showcasing books’ journey from paper to shelves, featuring search, sliders, user login, and responsive design.",
+    image: animePlus,
+    tag: ["All Projects", "JS Projects"],
+    gitUrl:
+      "https://github.com/selvalr/02-JavaScript-Projects/tree/main/95-life-on-paper",
+    previewUrl:
+      "https://drive.google.com/file/d/1OpNc-y5iGxpcQm_SUkthlCeZW4t91YMD/view?usp=drivesdk",
+  },
 ];
 
 const allTags = [
