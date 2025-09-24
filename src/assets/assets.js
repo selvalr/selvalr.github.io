@@ -61,6 +61,10 @@ import postman from "./postman.png";
 import nodejs from "./nodejs.png";
 import jwt from "./jwt.png";
 
+import freecodeDesign from "../assets/certificate/ResponseFreecode.png";
+import freecodeJs from "../assets/certificate/JsFreecode.png";
+import freecodeFrontEnd from "../assets/certificate/frontendFreecode.png";
+
 import HTMLCSS from "../assets/certificate/HTML and CSS in depth.jpg";
 import JavaScript from "../assets/certificate/Programming with JavaScript.jpg";
 import ReactBasic from "../assets/certificate/React Basics.jpg";
@@ -213,6 +217,25 @@ export const ExperienceData = [
 ];
 
 export const projectsData = [
+  {
+    title: "Responsive Web Design",
+    links_img: link_img,
+    src: "https://www.freecodecamp.org/certification/selvamanan/responsive-web-design",
+    image: freecodeDesign,
+  },
+  {
+    title: "JavaScript Algorithms and Data Structures",
+    links_img: link_img,
+    src: "https://www.freecodecamp.org/certification/selvamanan/javascript-algorithms-and-data-structures-v8",
+    image: freecodeJs,
+  },
+  {
+    title: "Front End Development Libraries",
+    links_img: link_img,
+    src: "https://www.freecodecamp.org/certification/selvamanan/front-end-development-libraries",
+    image: freecodeFrontEnd,
+  },
+
   {
     title: "HTML CSS",
     links_img: link_img,
